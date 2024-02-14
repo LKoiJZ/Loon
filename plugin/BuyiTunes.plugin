@@ -1,0 +1,12 @@
+#!name=BuyiTunes多合一解锁
+#!desc=BuyiTunes多合一解锁
+#!author=@ddgksf2013 @LKoiJZ
+#!homepage=https://github.com/LKoiJZ/Loon
+#!icon=https://raw.githubusercontent.com/LKoiJZ/Loon/main/assets/buyitunes.PNG
+
+[Script]
+# ～ BuyiTunes@ddgksf2013
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://gist.githubusercontent.com/ddgksf2013/9e0f6c7341beea09a31aa309d9d7f502/raw/buyitunes.js, requires-body=true, timeout=60, tag=buyitunes
+
+[MITM]
+hostname = buy.itunes.apple.com
