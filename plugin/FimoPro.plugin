@@ -1,0 +1,11 @@
+#!name=FimoPro
+#!desc=Fimo解锁会员
+#!author=@ddgksf2013 @LKoiJZ
+#!homepage=https://github.com/LKoiJZ/Loon
+#!icon=https://raw.githubusercontent.com/LKoiJZ/Loon/main/assets/fimo.png
+
+[Script]
+http-response ^https?:\/\/server\.zbisq\.com\/fimo-user script-path=https://github.com/ddgksf2013/MoYu/raw/master/FimoProCrack.js, requires-body=true, timeout=60, tag=FimoProCrack
+
+[MITM]
+hostname = server.zbisq.com

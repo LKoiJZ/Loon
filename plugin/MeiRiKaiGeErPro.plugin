@@ -1,0 +1,12 @@
+#!name=每日凯格尔Pro
+#!desc=每日凯格尔解锁会员
+#!author=@ddgksf2013 @LKoiJZ
+#!homepage=https://github.com/LKoiJZ/Loon
+#!icon=https://raw.githubusercontent.com/LKoiJZ/Loon/main/assets/kaigeer.PNG
+
+[Script]
+# > 每日凯格尔☆解锁会员权限（2024-01-29）@ddgksf2013
+http-response ^https?:\/\/kegelapi\.dailystretch\.app\/api\/v\d\/(profile|subject) script-path=https://github.com/ddgksf2013/MoYu/raw/master/MeiRiKaiGeErProCrack.js, requires-body=true, timeout=60, tag=MeiRiKaiGeErProCrack
+
+[MITM]
+hostname = kegelapi.dailystretch.app

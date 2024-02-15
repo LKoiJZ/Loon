@@ -1,0 +1,13 @@
+#!name=NotabilityPro
+#!desc=Notability解锁会员
+#!author=@89996462 @LKoiJZ
+#!homepage=https://github.com/LKoiJZ/Loon
+#!icon=https://raw.githubusercontent.com/LKoiJZ/Loon/main/assets/notability.png
+
+[Script]
+http-response ^https?:\/\/notability\.com\/global script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/notability1.js, requires-body=true, timeout=60, tag=notability1
+
+http-response ^https?:\/\/notability\.com\/subscriptions script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Notability.js, requires-body=true, timeout=60, tag=Notability
+
+[MITM]
+hostname = notability.com
