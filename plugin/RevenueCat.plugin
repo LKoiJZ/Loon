@@ -1,0 +1,14 @@
+#!name=RevenueCat多合一
+#!desc=今天也要吸猫猫吖 https://appraven.net/collection/77299969
+#!author=@ddgksf2013 @LKoiJZ
+#!homepage=https://github.com/LKoiJZ/Loon
+#!icon=https://raw.githubusercontent.com/LKoiJZ/Loon/main/assets/revenuecat.png
+
+[Script]
+# ～ RevenueCat@ddgksf2013
+http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$) script-path=https://gist.githubusercontent.com/ddgksf2013/dbb1695cd96743eef18f3fac5c6fe227/raw/revenuecat.js, requires-body=true, timeout=60, tag=RevenueCatVip
+
+http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers) script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/deleteHeader.js, timeout=60, tag=RevenueCatDeleteHeader
+
+[MITM]
+hostname = api.revenuecat.com
