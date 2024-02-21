@@ -1,0 +1,11 @@
+#!name=AppRavenPro
+#!desc=AppRaven解锁会员
+#!author=@Yu9191 @LKoiJZ
+#!homepage=https://github.com/LKoiJZ/Loon
+#!icon=https://raw.githubusercontent.com/LKoiJZ/Loon/main/assets/appraven.png
+
+[Script]
+http-response https://appraven.net/appraven/graphql script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js, requires-body=true, timeout=60, tag=AppRaven
+
+[MITM]
+hostname = appraven.net
